@@ -1,0 +1,114 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #EDD0AB;
+    display: flex;
+    flex-direction: column;
+}
+
+
+header {
+    background: #BEAD9D;
+    font: small-caps 24px/1 sans-serif;
+    color: #fff;
+    padding: 1% 0%;
+    text-align: center;
+    box-shadow: 2px 5px #7e67522a;
+}
+
+#secciones ul {
+    list-style: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+#secciones ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+#secciones ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    text-shadow: 1px 1px #7e7266;
+    padding: 0.5% 3%;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+    display: inline-block;
+    position: relative;
+}
+
+#secciones ul li a:hover {
+    background: #fff;
+    border-radius: 25px;
+    color: #7e7266;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    transform: scale(1.2); /* Aumenta el tamaño en hover */
+    box-shadow: #8c8f7a98 1px 1px;
+    opacity: 0.8;
+}
+
+
+#home, #about, #skills, #projects {
+    position: relative;
+    padding-bottom: 600px;
+    text-align: center;
+    font-style: italic;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 5px 5px #7C6550;
+    overflow: hidden;
+    padding: 200px 200px 200px 200px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#contact {
+    position: relative;
+    padding-bottom: 600px;
+    text-align: center;
+    font-style: italic;
+    border-radius: 10px;
+    padding: 200px 200px 200px 200px;
+    flex: 1;
+    justify-content: center;
+}
+
+#home::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(https://poracayporalla.com/wp-content/uploads/2018/10/Puesta-de-sol-Casapueblo.jpg); /* Cambia esta URL por la de tu imagen */
+    background-size: cover; /* Hace que la imagen cubra todo el fondo */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-position: center center; /* Centra la imagen en el fondo */
+    background-attachment: fixed;
+    opacity: 0.6; /* Controla la transparencia de la imagen */
+    z-index: -1; /* Envía la imagen detrás del texto */
+}
+
+h2 {
+    font: small-caps 64px/1 sans-serif;
+}
+
+h1 {
+    font-size: 84px;
+    color: #A0846A;
+}
+
+h3 {
+    font-size: 40px;
+    color: #EDD0AB;
+}
+
